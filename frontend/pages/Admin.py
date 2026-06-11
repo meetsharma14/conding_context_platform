@@ -9,7 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-API_BASE_URL = os.getenv("API_BASE_URL", "https://conding-context-platform.onrender.com/")
+API_BASE_URL = os.getenv("API_BASE_URL", "https://conding-context-platform.onrender.com")
 
 # ==========================
 # SESSION STATE
