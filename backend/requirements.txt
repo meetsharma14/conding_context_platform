@@ -7,5 +7,6 @@ email-validator
 python-multipart
 passlib[bcrypt]
 python-jose[cryptography]
+starlette-admin
 bcrypt
 requests
