@@ -53,7 +53,7 @@ def login():
     # NEW: Add role selection
     role = st.selectbox(
         "Login As",
-        ["participant", "admin"]
+        ["participant"]
     )
 
     
