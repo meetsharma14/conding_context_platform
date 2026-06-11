@@ -51,7 +51,11 @@ def login():
     st.header("Login")
     
     # NEW: Add role selection
-    
+    role = st.selectbox(
+        "Login As",
+        ["participant", "admin"]
+    )
+
     
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
@@ -61,7 +65,7 @@ def login():
         payload = {
             "username": username,
             "password": password,
-            "requested_role": "participant"
+            "requested_role": role
         }
 
         try:
