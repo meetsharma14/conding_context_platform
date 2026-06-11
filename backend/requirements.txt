@@ -10,3 +10,4 @@ python-jose[cryptography]
 starlette-admin
 bcrypt
 requests
+argon2-cffi
