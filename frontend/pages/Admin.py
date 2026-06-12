@@ -186,12 +186,12 @@ def view_submissions():
 # ==========================
 
 def main():
-    st.sidebar.title("🔐 Admin Panel")
+    st.sidebar.title("Admin Panel")
 
     if not st.session_state.logged_in:
         admin_login()
     else:
-        st.sidebar.success(f"✅ Logged in as Admin")
+        st.sidebar.success(f"Logged in as Admin")
         choice = st.sidebar.radio("Admin Menu", ["Dashboard", "Problems", "Users", "Submissions", "Logout"])
         
         st.title("Admin Management System")
