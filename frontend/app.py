@@ -112,7 +112,7 @@ def logout():
 # ==========================
 
 def problems_page():
-    st.title("📂 Coding Problems")
+    st.title("Coding Problems")
     
     r = requests.get(f"{API_BASE_URL}/problems/")
     problems = handle_api_response(r)
@@ -178,7 +178,7 @@ def leaderboard_page():
         st.table(pd.DataFrame(data))
 
 def submissions_page():
-    st.header("📜 Recent Submissions")
+    st.header("Recent Submissions")
     # Fetch all if admin, fetch personal if participant (backend logic dependent)
     r = requests.get(f"{API_BASE_URL}/submissions/", headers=get_auth_headers())
     data = handle_api_response(r)
